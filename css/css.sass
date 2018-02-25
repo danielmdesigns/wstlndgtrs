@@ -1,15 +1,7 @@
 /* Sass Document */
-$black: #232323
-$white: #FFFFFF
-$gold: #B6A17C  
-$grey: #434343
-  
-@mixin font-mont
-  font-family: 'Montserrat', "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif
-@mixin font-alice
-  font-family: 'Alice', Georgia, Times, Garamond, Baskerville, "Times New Roman", serif
-@mixin text-center
-  text-align: center
+@import colors
+@import fonts
+@import menu
   
 *
   padding: 0
@@ -23,6 +15,12 @@ main
   width: 100%
   max-width: 800px
   margin: 0 auto
+  
+.logo
+  height: 100px
+  display: block
+  margin: 0 auto 2.5rem
+  
   
 .text-heading
   @include font-alice
