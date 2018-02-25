@@ -4,6 +4,34 @@
   font-family: 'Montserrat', "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif
 @mixin font-alice
   font-family: 'Alice', Georgia, Times, Garamond, Baskerville, "Times New Roman", serif
-  
+@mixin text-width
+  max-width: 37.5rem
 @mixin text-center
   text-align: center
+  
+h1, p
+  @include text-width
+  
+.text-heading,
+.text-body,
+  width: 100%
+  //max-width: 37.5rem
+  color: $white
+.text-body,
+.text-subdued
+  @include font-mont
+.text-heading
+  @include font-alice
+  font-size: 1.5rem
+  line-height: 2.25rem
+  margin: 0 auto 1.5rem
+  @include text-center
+.text-body
+  line-height: 1.5rem
+  margin: 2rem auto
+  text-align: left
+.text-subdued
+  font-size: 0.75rem
+  font-weight: 600
+  @include text-center
+  color: $grey
