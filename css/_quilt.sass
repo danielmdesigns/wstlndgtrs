@@ -1,0 +1,44 @@
+
+@mixin text-line
+  display: flex
+  align-items: center
+  text-align: center
+  &:before,
+  &:after
+    flex: 1 0 20%
+    height: 1px
+    content: ''
+  &:before
+    margin-right: 25px
+    background: linear-gradient(-45deg, $gold, transparent)
+  &:after
+    margin-left: 25px
+    background: linear-gradient(45deg, $gold, transparent)
+
+@mixin text-line-left
+  @include text-line
+  &:after
+    flex: 0
+    left: 0
+
+@mixin text-line-right
+  @include text-line
+  &:before 
+    flex: 0
+    margin-right: 0
+.text-line 
+  @include text-line()
+.text-line-left
+  @include text-line-left()
+.text-line-right
+  @include text-line-right()
+    
+.text-line
+  margin-bottom: 40px
+  margin-top: 40px
+    
+.hr-line
+  border: 0
+  height: 1px
+  margin-top: 40px
+  background: linear-gradient(to right, transparent, $gold, transparent)
