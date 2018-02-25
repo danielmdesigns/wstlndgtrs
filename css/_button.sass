@@ -1,24 +1,24 @@
 a.btn
+  @include font-mont
+  font-size: 0.875rem
+  font-weight: 600
   position: relative
   display: inline-block
   margin: 1rem auto 2rem
   padding: 0.75rem 2.5rem
-  border-radius: 30px
+  cursor: pointer
+  transition: all 0.1s ease
   text-align: center
   white-space: nowrap
-  cursor: pointer
-  @include font-mont
-  font-size: 0.875rem
-  font-weight: 600
-  letter-spacing: 2px
-  background-color: transparent
-  border: 1px solid $gold
-  color: $gold
-  transition: all .1s ease
   text-decoration: none
+  letter-spacing: 2px
+  color: $gold
+  border: 1px solid $gold
+  border-radius: 1.875rem
+  background-color: transparent
   &:hover
-    background-color: $gold
     color: $black
+    background-color: $gold
   
 @media screen and (max-width:600px)
   a.btn
