@@ -1,7 +1,7 @@
 .quote-text
-  font-family: "Montserrat"
+  @include font-mont
   text-transform: uppercase
-  color: $grey
+  color: $white
   text-align: center
   font-weight: 800
   font-size: 12px
@@ -26,7 +26,7 @@
   cursor: pointer
   opacity: 0
   transition: left 1.4s, opacity .5s ease
-  font-family: 'Alice', Georgia, Times, Garamond, Baskerville, "Times New Roman", serif
+  @include font-alice
   font-size: 1.5rem
   line-height: 2.25rem
   text-align: center
@@ -49,7 +49,7 @@ ul li
   list-style: none
   
 .owl-pagination
-  margin-top: 10px
+  margin-top: 20px
   
 .owl-theme .owl-controls .owl-page span
   width: 8px
@@ -67,5 +67,6 @@ ul li
   
 .owl-theme .owl-controls .owl-page.active span
   background-color: $gold
+  
 
 

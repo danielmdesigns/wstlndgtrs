@@ -2,6 +2,9 @@
 .selected {
   color: #B6A17C; }
 
+h1 {
+  font-weight: normal; }
+
 h1, p {
   max-width: 37.5rem; }
 
@@ -185,9 +188,9 @@ a.btn {
   .img-quilt {
     margin: 0; } }
 .quote-text {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  color: #434343;
+  color: #FFFFFF;
   text-align: center;
   font-weight: 800;
   font-size: 12px;
@@ -234,7 +237,7 @@ ul li {
   list-style: none; }
 
 .owl-pagination {
-  margin-top: 10px; }
+  margin-top: 20px; }
 
 .owl-theme .owl-controls .owl-page span {
   width: 8px;
