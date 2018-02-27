@@ -42,7 +42,8 @@ $(document).ready(function() {
     navigation: false,
     pagination: true,
     singleItem: true,
-    dots: false
+    dots: false,
+    autoHeight: true
   });
 });
 
