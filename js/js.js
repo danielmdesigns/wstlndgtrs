@@ -37,7 +37,7 @@ $(document).ready(commentSlider.init);
 
 $(document).ready(function() {
   $(".owl-carousel").owlCarousel({
-    autoPlay: 4000,
+    //autoPlay: 10000,
     slideSpeed: 1000,
     navigation: false,
     pagination: true,
