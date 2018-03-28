@@ -1,0 +1,39 @@
+/* xs (1up) */
+.gallery
+  overflow: hidden
+  max-width: 76em
+  //margin: 2.5rem auto
+  list-style: none
+
+.gallery-item
+  position: relative
+  cursor: pointer
+  //display: inline-block
+  overflow: hidden
+  vertical-align: top
+  padding: 0
+  margin: 0
+	
+.gallery-item > a > img
+  display: block
+  max-width: 100%
+  transition: all 0.3s
+  transform: scale(1)
+  &:hover
+    transform: scale(1.1)
+	
+@media all and (max-width: 27em)
+  .gallery-item a
+    //display: inline-block
+    margin-bottom: -4px
+
+/* small (2up) */
+@media all and (min-width: 27em)
+  .gallery-item
+    float: left
+    width: 50%
+
+/* large (4up) */
+@media all and (min-width: 60em)
+  .gallery-item
+    width: 25%
